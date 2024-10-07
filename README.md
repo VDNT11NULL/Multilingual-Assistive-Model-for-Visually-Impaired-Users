@@ -124,7 +124,6 @@ After running the pipeline, the model will generate:
 - Extend support for more regional languages, improving translation accuracy for lower-resource languages.
 - Deployment of the project on open-source platforms using streamlit.
 - Explore additional state-of-the-art models for speech synthesis that perform well with complex grammatical structures in Indic languages.
-- Optimize the pipeline for real-time audio generation.
 
 
 ---
