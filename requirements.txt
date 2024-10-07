@@ -1,0 +1,10 @@
+streamlit
+torch
+transformers
+Pillow
+IndicTransToolkit
+gtts
+soundfile
+matplotlib
+numpy
+pandas
