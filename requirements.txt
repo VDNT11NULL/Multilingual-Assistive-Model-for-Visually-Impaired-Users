@@ -2,7 +2,7 @@ streamlit
 torch
 transformers
 Pillow
-IndicTransToolkit
+git+https://github.com/VarunGumma/IndicTransToolkit.git
 gtts
 soundfile
 matplotlib
