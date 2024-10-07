@@ -15,7 +15,7 @@ This repository provides a working demonstration of a **Multilingual Assistive M
 6. [Usage](#usage)
 7. [Results](#results)
 8. [Future Improvements](#future-improvements)
-9. [License](#license)
+9. [Acknowledgments](#Acknowledgments)
 
 ---
 
