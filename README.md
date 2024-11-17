@@ -1,11 +1,10 @@
 # Multilingual-Assistive-Model-for-Visually-Impaired-Users
 
----
+[![Open in Spaces](https://img.shields.io/badge/🤗%20Open%20In%20Spaces-blue.svg)](https://huggingface.co/spaces/VDNT11/Multilingual-Assistive-Model)
 
+---
 This repository provides a working demonstration of a **Multilingual Assistive Model** designed to offer support for visually impaired users by integrating **image captioning**, **translation**, and **text-to-speech (TTS)** synthesis. By generating descriptive and multilingual content in audio format, the system aims to provide a seamless user experience across multiple Indic languages.
-
 ---
-
 ## **Table of Contents**
 1. [Abstract](#abstract)
 2. [Features](#features)
