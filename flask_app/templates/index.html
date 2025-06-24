@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Assistive Model</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multilingual Assistive Model</h1>
+        
+        <!-- Image Upload Form -->
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <label for="image">Upload an Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+            
+            <label for="languages">Select Languages for Translation:</label>
+            <select id="languages" name="languages" multiple>
+                <option value="hin_Deva">Hindi</option>
+                <option value="mar_Deva">Marathi</option>
+                <option value="guj_Gujr">Gujarati</option>
+                <option value="urd_Arab">Urdu</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Display Results -->
+        {% if uploaded_image %}
+        <div class="result">
+            <h2>Uploaded Image</h2>
+            <img src="{{ uploaded_image }}" alt="Uploaded Image">
+
+            <h2>Generated Caption</h2>
+            <p>{{ caption }}</p>
+
+            <h2>Translations and Audio</h2>
+            <ul>
+                {% for lang, translation in translations.items() %}
+                <li>
+                    <strong>{{ lang }}:</strong> {{ translation }}
+                    <br>
+                    <audio controls>
+                        <source src="/audio/{{ lang }}.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
