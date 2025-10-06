@@ -13,7 +13,7 @@ def load_blip2():
     )
     return processor, model
 
-st.title("🧠 Multilingual Assistive VLM Prototype")
+st.title(" Multilingual Assistive VLM Prototype")
 
 processor, model = load_blip2()
 
@@ -29,17 +29,17 @@ if uploaded_image:
         caption_ids = model.generate(**inputs)
         caption = processor.decode(caption_ids[0], skip_special_tokens=True)
 
-    st.success("🗨️ Caption:")
+    st.success(" Caption:")
     st.markdown(f"> **{caption}**")
 
     question = st.text_input("Ask a question about the image (simulated STT):")
 
     if question:
-        st.markdown(f"🧑‍💬 You asked: **{question}**")
+        st.markdown(f" You asked: **{question}**")
         with st.spinner("Answering..."):
             qa_inputs = processor(images=image, text=question, return_tensors="pt").to("cuda")
             output_ids = model.generate(**qa_inputs, max_new_tokens=50)
             answer = processor.decode(output_ids[0], skip_special_tokens=True)
 
-        st.success("🧠 Answer:")
+        st.success(" Answer:")
         st.markdown(f"**{answer}**")
