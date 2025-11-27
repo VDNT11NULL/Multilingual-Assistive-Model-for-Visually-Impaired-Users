@@ -47,9 +47,15 @@ The project follows a structured approach to integrate multiple machine learning
 ### **1. Model Selection**:
 - **Image Captioning**: 
   - We use **BLIP (Bootstrapped Language Image Pretraining)**, a model by Salesforce, for generating captions from images. It is pre-trained on the MS COCO dataset and is known for its superior performance in image captioning tasks.
+
+![Captioning Model](assets/kaido.png)
+
   
 - **Translation**:
   - The **IndicTrans2** model is employed to translate the captions into Indic languages, offering support for languages such as Hindi, Marathi, and Gujarati.
+
+![Captioning Model](assets/spectogram.png)
+
   
 - **Speech Synthesis**:
   - For speech synthesis, we use two models:
